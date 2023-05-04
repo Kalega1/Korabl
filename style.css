@@ -1,0 +1,118 @@
+
+
+
+@media (max-width: 767px) {
+    body {
+      background-size: contain;
+    }
+  }
+  
+
+
+body{
+background-image: url('shipem.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+.header{
+padding: 2px;    
+}
+
+
+
+.zag{
+font-family: AppleMyungjo;
+display: flex;
+justify-content: center;
+}
+
+.podzag{
+font-family: AppleMyungjo;
+display: flex;
+justify-content: center;
+}
+
+.ticket {
+display: flex;
+justify-content: end;
+flex-direction: row;
+}
+
+
+.ticket2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    }
+
+
+
+
+.column{
+    font-family: AppleMyungjo;
+display: grid;
+flex: 1;
+padding: 10px;
+}
+
+
+
+.msg{
+font-family: AppleMyungjo;
+display: flex;
+justify-content: center;
+flex-direction: row;
+color: rgb(255, 128, 0);
+}
+
+.signed {
+    background: rgb(209, 208, 207);
+    border-style: none;
+}
+
+.logout {
+text-decoration: none;
+color: rgb(67, 67, 67);
+    
+}
+
+.spisok{
+    list-style: none;
+    width: 100%;
+    padding-top: 0px;
+}
+
+.spis2{
+    display: inline-block;
+    width: 57px;
+    margin-right: 10px;
+}
+
+.inventory{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 227px; 
+  z-index: 1;
+  width: 200px;
+  height: 200px; 
+  background-color: #f1f1f1;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+  
+
+
+
+
+
+.button{
+    display: flex;
+    background-color: rgb(249, 233, 170);
+    border: wheat;
+    border-radius: 7px;
+    font-size: inherit;
+}

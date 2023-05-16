@@ -5,6 +5,9 @@ if (!$_SESSION['id']) {
 }
 ?>
 
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,7 +28,7 @@ if (!$_SESSION['id']) {
 
     <br>
 
-
+    <a href="smradovo.php" class="link">ЭНЦИКЛОПЕДИЯ СМРАДОВО</a>
     <a href="includes/loguot.php" class="logout">СОЙТИ</a>
     <form>
       <div class="ticket">
@@ -51,16 +54,22 @@ if (!$_SESSION['id']) {
     <br><br>
     <button class="button" onclick="markAsActive()">Отметиться</button>
     <br><br>
-    <form action='includes/fishng.php' method='post'>
-      <input type='submit' name='catch_fish' value='Рыбачить' class="button">
-    </form>
-    <?php
-    session_start();
-    if (isset($_SESSION['ribalka'])) {
-      echo "<p>" . $_SESSION['ribalka'] . "</p>";
-      unset($_SESSION['ribalka']);
-    }
-    ?>
+  
+<form action='includes/fishng.php' method='post'>
+      <input type='submit' name='catch_fish' value='Закинуть удочку' class="button">
+</form>
+
+
+<?php
+session_start();
+if (isset($_SESSION['ribalka'])) {
+   echo "<p>" . $_SESSION['ribalka'] . "</p>";
+   unset($_SESSION['ribalka']);
+}
+?>
+
+
+
 
     <p class="podzag"></p>
     <br><br><br>

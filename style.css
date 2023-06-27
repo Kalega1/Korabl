@@ -1,23 +1,14 @@
-
-
-
-@media (max-width: 767px) {
-    body {
-      background-size: contain;
-    }
-  }
-  
-
-
-body{
-background-image: url('shipem.jpg');
-background-repeat: no-repeat;
-background-size: cover;
-}
-
+/* 
+*{
+    box-sizing: border-box;
+} */
 
 .header{
 padding: 2px;    
+}
+
+.ava{
+    max-width: 18%;
 }
 
 
@@ -116,3 +107,112 @@ color: rgb(67, 67, 67);
     border-radius: 7px;
     font-size: inherit;
 }
+
+.link {
+    display: flex;
+    justify-content: center;
+}
+
+
+.wrapper {
+    width: 100%;
+    height: 188vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+}
+  
+.smrad_wrapper{
+    max-width: 1393px;
+    position: relative;
+}
+
+.smrad_wrapper svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1347px;
+}
+
+.religion{
+    fill:none;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.tooltip {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 5px;
+    background: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+.info_bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0,5);
+    opacity: 0;
+    transition: 0.3s all;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.info_bg.active{
+    pointer-events: all;
+    opacity: 1;
+    transition: 0.3s all;
+}
+.info{
+    position: fixed;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 249, 242);
+    border-radius: 19px;
+    padding: 1%;
+    width: 24vw;
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        width: 484%;
+        height: auto;
+        overflow-y: auto;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .info {
+        font-size: 13px;
+        position: fixed;
+        top: 50%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+        background: rgb(255, 249, 242);
+        border-radius: 17px;
+        padding: 2%;
+        width: 53vw;
+    }
+  }
+
+
+  
+
+
+
+

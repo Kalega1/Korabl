@@ -30,7 +30,6 @@ session_start();
   </header>
   <main>
     <h1 class="zag">ЗАПИСЬ НА КОРАБЛЬ</h1>
-    <h4 class="podzag">СМРАДОВО ДИСКОРДОВО 〰️ МЕСТЕЧКО БРАУЗЕРОВО</h4>
     <br><br><br>
     <div class="ticket2">
       <form action="includes/signup.php" method="POST" class="style_ticket" enctype="multipart/form-data">

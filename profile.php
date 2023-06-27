@@ -28,11 +28,11 @@ if (!$_SESSION['id']) {
 
     <br>
 
-    <a href="smradovo.php" class="link">ЭНЦИКЛОПЕДИЯ СМРАДОВО</a>
+    <a href="smradovo.php" class="link">КАРТА СМРАДОВО</a>
     <a href="includes/loguot.php" class="logout">СОЙТИ</a>
     <form>
       <div class="ticket">
-        <img src="<?php echo $_SESSION['id']['avatar'] ?>" width="50" alt="">
+        <img class="ava" src="<?php echo $_SESSION['id']['avatar'] ?>" width="50" alt="">
         <div>
           <p class=""><?php echo $_SESSION['id']['login'] ?></p>
           <a href="#"><?php echo $_SESSION['id']['email'] ?></a>
@@ -64,7 +64,7 @@ if (!$_SESSION['id']) {
 session_start();
 if (isset($_SESSION['ribalka'])) {
    echo "<p>" . $_SESSION['ribalka'] . "</p>";
-   unset($_SESSION['ribalka']);
+   unset ($_SESSION['ribalka']);
 }
 ?>
 

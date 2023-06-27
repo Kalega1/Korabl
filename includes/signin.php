@@ -5,6 +5,7 @@ require_once 'connect.php';
 $login = $_POST['login'];
 $password = $_POST['password'];
 
+
 $result = mysqli_query($connect, "SELECT password FROM users WHERE login = '$login'");
 $hash = mysqli_fetch_array($result)['password'];
 $check_user = mysqli_query($connect, "SELECT * FROM users WHERE login = '$login'");
